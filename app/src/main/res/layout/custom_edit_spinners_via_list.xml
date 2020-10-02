@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativePieceSection"
+    android:layout_width="500dp"
+    android:layout_height="250dp"
+    android:layout_margin="50dp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/img_list_background"
+    android:visibility="visible">
+
+    <Spinner
+        android:id="@+id/spinnerChooseList"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/add_piece_dropdown_list" />
+
+    <LinearLayout
+        android:id="@+id/linearDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEÇ : "
+            android:textColor="@color/login_page_button_text_color_dark"/>
+
+        <Spinner
+            android:id="@+id/spinnerList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btnPieceImage"
+            android:background="@drawable/add_piece_dropdown_list" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:textColor="@color/login_page_background_dark"
+            android:text="SİL"
+            android:background="@drawable/add_button_option_button"
+
+
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnCloseSpinnerEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close_list_edit_section"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

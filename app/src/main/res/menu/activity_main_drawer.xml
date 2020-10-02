@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/groupBottom"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeAction"
+            android:icon="@drawable/ic_home_dark"
+            android:title="ANASAYFA" />
+        <item
+            android:id="@+id/addAction"
+            android:icon="@drawable/ic_plus_dark"
+            android:title="EKLE" />
+
+        <item
+            android:id="@+id/listAction"
+            android:icon="@drawable/ic_search_dark"
+            android:title="ARA" />
+
+        <item
+            android:id="@+id/aboutAction"
+            android:icon="@drawable/ic_info_dark"
+            android:title="HAKKINDA" />
+
+    </group>
+
+
+</menu>

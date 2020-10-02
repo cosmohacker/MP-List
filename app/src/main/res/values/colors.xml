@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dark Mode Colors -->
+
+    <color name="login_page_background_dark">#121213</color>
+    <color name="login_page_button_text_color_dark">#9C915D</color>
+    <color name="background_dark">#121213</color>
+    <color name="side_bar_header_button_color">#424141</color>
+
+    <!-- End Of Dark Mode Colors -->
+
+    <color name="background_transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:gravity="center"
+    tools:context=".Frontend.Tabs.About.AboutFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutVersionNotes"
+        android:layout_width="380px"
+        android:layout_height="515px"
+        android:layout_margin="10dp"
+        android:background="#3c1c68"
+        android:padding="20dp">
+
+        <ListView
+            android:id="@+id/lstVersionNotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutContact"
+        android:layout_width="788px"
+        android:layout_height="130px"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/layoutVersionNotes"
+        android:background="#ca26d1"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/contactNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/next_contact" />
+
+        <TextView
+            android:id="@+id/txtContactObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="+90 541 505 91 91"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/contactPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/previous_contact" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAboutDeveloper"
+        android:layout_width="380px"
+        android:layout_height="135px"
+        android:layout_below="@+id/layoutDate"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/layoutIzTech"
+        android:background="#e8c70b"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="CREATED BY YAĞIZCAN YAVUZ"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="www.yagizcanyavuz.com"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutIzTech"
+        android:layout_width="380px"
+        android:layout_height="365px"
+        android:layout_below="@id/layoutContact"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/layoutVersionNotes"
+        android:background="#25c53c"
+        android:padding="20dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutClock"
+        android:layout_width="385px"
+        android:layout_height="140px"
+        android:layout_below="@id/layoutContact"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/layoutIzTech"
+        android:background="#bb0d0d"
+        android:padding="20dp">
+
+        <DigitalClock
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/background_dark"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDate"
+        android:layout_width="385px"
+        android:layout_height="50px"
+        android:layout_below="@id/layoutClock"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/layoutIzTech"
+        android:background="#e8c70b"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtCurrentDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="20/12/2020"
+            android:textColor="@color/background_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

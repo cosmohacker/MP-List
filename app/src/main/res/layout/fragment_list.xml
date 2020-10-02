@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Frontend.Tabs.List.ListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_list_background"
+        android:orientation="vertical"
+        android:padding="46dp">
+
+        <LinearLayout
+            android:id="@+id/linearGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:paddingTop="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerListPieceCategory"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:background="@drawable/custom_drop_down_for_list" />
+
+            <ImageButton
+                android:id="@+id/btnEditPieceDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/list_edit_button"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/txtSearchPieces"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/custom_drop_down_for_list"
+                android:focusedByDefault="false"
+                android:hint="ARA"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/background_dark"
+                android:textColorHint="@color/background_dark" />
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/recycler_view_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:numColumns="4" />
+
+    </LinearLayout>
+
+</LinearLayout>

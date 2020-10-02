@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativePieceSection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@color/background_dark"
+    android:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/btnPieceImage"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:background="@color/login_page_button_text_color_dark"
+        android:src="@drawable/add_piece_image_button_image" />
+
+    <Button
+        android:id="@+id/btnOpenGallery"
+        android:layout_width="118px"
+        android:layout_height="30dp"
+        android:layout_below="@+id/btnPieceImage"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add_button_option_button"
+        android:text="Kamera"
+        android:textColor="@color/background_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="118px"
+        android:layout_height="30dp"
+        android:layout_below="@id/btnPieceImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnOpenGallery"
+        android:background="@drawable/add_button_option_button"
+        android:text="Galeri"
+        android:textColor="@color/background_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnInsertPiece"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/btnPieceImage"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btnOpenCamera"
+        android:background="@drawable/add_button_insert"
+        android:text="Ekle"
+        android:textColor="@color/background_dark"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerPieceBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/add_piece_dropdown_list" />
+
+    <Spinner
+        android:id="@+id/spinnerPieceModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/spinnerPieceBrand"
+        android:background="@drawable/add_piece_dropdown_list_long" />
+
+    <Spinner
+        android:id="@+id/spinnerPieceCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPieceModel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/add_piece_dropdown_list" />
+
+    <Spinner
+        android:id="@+id/spinnerPieceVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPieceModel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/spinnerPieceCategory"
+        android:background="@drawable/add_piece_dropdown_list_long"
+        android:tooltipText="Versiyon" />
+
+    <EditText
+        android:id="@+id/txtPieceCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPieceCategory"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/add_piece_dropdown_list"
+        android:hint="Adet"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/txtPieceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPieceVersion"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtPieceCount"
+        android:background="@drawable/add_piece_dropdown_list_long"
+        android:hint="Parça Adı / Tanımı"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/txtPieceJunkCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPieceCount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/add_piece_dropdown_list"
+        android:hint="Hurda Sayısı"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPieceName"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtPieceCount"
+        android:background="@drawable/add_piece_dropdown_list_long"
+        android:hint="Açıklama"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtPiecePrice"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_price_edit_text"
+            android:hint="Fiyat"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPiecePriceType"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_price_edit_text"
+            android:hint="Fiyat"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerPieceModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDescription"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/layoutPrice"
+        android:background="@drawable/add_piece_dropdown_list_long"
+        android:tooltipText="Modül" />
+
+    <EditText
+        android:id="@+id/txtPieceNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInsertPiece"
+        android:layout_below="@+id/layoutPrice"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnPieceImage"
+        android:background="@drawable/custom_note_edit_text"
+        android:hint="Not"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeModuleSection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@color/background_dark"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtModuleName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescription"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btnPieceImage"
+            android:background="@drawable/add_piece_dropdown_list_long"
+            android:hint="Modül Adı"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:id="@+id/prgModule"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_seek_bar_progress"
+            android:thumb="@drawable/custom_seek_bar_thumb" />
+
+        <ImageButton
+            android:id="@+id/btnInsertModule"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/insert_button_circle"
+            android:src="@drawable/ic_insert_dark"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

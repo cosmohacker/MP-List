@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:gravity="center"
+    tools:context=".Frontend.Tabs.Home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutLastEntries"
+        android:layout_width="380px"
+        android:layout_height="400px"
+        android:layout_margin="10dp"
+        android:background="#3c1c68"
+        android:padding="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLastPieces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutUsers"
+        android:layout_width="380px"
+        android:layout_height="200px"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/layoutLastEntries"
+        android:layout_toRightOf="@+id/layoutLastEntries"
+        android:background="#25c53c"
+        android:padding="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="380px"
+        android:layout_height="200px"
+        android:layout_above="@id/layoutNotes"
+        android:layout_below="@id/layoutUsers"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/layoutLastEntries"
+        android:background="#e8c70b"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="minSdkVersion 16"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="targetSdkVersion 28"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="versionCode 1"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="versionName 1.0"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutClock"
+        android:layout_width="380px"
+        android:layout_height="144px"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/layoutUsers"
+        android:layout_toRightOf="@+id/layoutUsers"
+        android:background="#bb0d0d"
+        android:padding="20dp">
+
+        <DigitalClock
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/background_dark"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNotes"
+        android:layout_width="780px"
+        android:layout_height="98px"
+        android:layout_below="@+id/layoutLastEntries"
+        android:layout_margin="10dp"
+        android:background="#217ec9"
+        android:padding="20dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutGraph"
+        android:layout_width="380px"
+        android:layout_height="353px"
+        android:layout_below="@+id/layoutClock"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/layoutInfo"
+        android:background="#ca26d1"
+        android:padding="20dp">
+
+        <ProgressBar
+            android:id="@+id/prgCount"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="68152"
+            android:progressDrawable="@drawable/custom_home_progressbar"
+            android:rotation="90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/prgJunk"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="68152"
+            android:progressDrawable="@drawable/custom_home_progressbar_2"
+            android:rotation="-90"
+            android:scaleX="-1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalPieceCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalJunkCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

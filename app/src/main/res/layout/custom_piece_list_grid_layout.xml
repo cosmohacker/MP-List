@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="250px"
+        android:layout_height="400px"
+        android:background="@drawable/piece_item"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/pieceImage"
+            android:layout_width="235px"
+            android:layout_height="250dp"
+            android:layout_marginTop="-40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/relativeCustomGridItem"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postBackground"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPieceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtPiecePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nereden"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/background_dark"
+                android:text="DETAY" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

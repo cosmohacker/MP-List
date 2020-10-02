@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Dark Theme -->
+
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/login_page_background_dark</item>
+        <item name="colorAccent">@color/login_page_background_dark</item>
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="DarkTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="DarkTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="DarkTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- End Of Dark Theme -->
+
+</resources>

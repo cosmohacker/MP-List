@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeModelSection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@color/background_dark"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerModelCategory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_piece_dropdown_list"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerModelBrand"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_piece_dropdown_list"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerModelVersion"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_piece_dropdown_list"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtModelName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/add_piece_dropdown_list_long"
+            android:hint="Model Adı"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:id="@+id/prgModel"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_seek_bar_progress"
+            android:thumb="@drawable/custom_seek_bar_thumb" />
+
+        <ImageButton
+            android:id="@+id/btnInsertModel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/insert_button_circle"
+            android:src="@drawable/ic_insert_dark"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

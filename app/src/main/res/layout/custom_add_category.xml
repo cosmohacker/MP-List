@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeCategorySection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@color/background_dark"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtCategoryName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="text|textVisiblePassword"
+            android:background="@drawable/add_piece_dropdown_list_long"
+            android:hint="Kategori Adı"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <SeekBar
+            android:id="@+id/prgCategory"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_seek_bar_progress"
+            android:thumb="@drawable/custom_seek_bar_thumb"
+            android:progress="0"/>
+
+        <ImageButton
+            android:id="@+id/btnInsertCategory"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/insert_button_circle"
+            android:src="@drawable/ic_insert_dark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

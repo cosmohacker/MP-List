@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".Frontend.Tabs.Add.AddFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMainBrand"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="MARKA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMainCategory"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="KATEGORİ"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMainModel"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="MODEL"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btnMainVersion"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="VERSİYON"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMainModule"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="MODÜL"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMainPiece"
+            android:layout_width="175px"
+            android:layout_height="120dp"
+            android:background="@drawable/add_button"
+            android:paddingBottom="4dp"
+            android:text="PARÇA"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutButtons"
+        android:padding="50dp">
+
+        <ImageView
+            android:id="@+id/separatorLeft"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/add_page_separator" />
+
+        <TextView
+            android:id="@+id/txtEventText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/separatorRight"
+            android:layout_toRightOf="@+id/separatorLeft"
+            android:gravity="center"
+            android:text="PARÇA"
+            android:textColor="@color/login_page_button_text_color_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/separatorRight"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/add_page_separator" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/insertPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutSeparator">
+
+        <include layout="@layout/custom_add_piece" />
+
+        <include layout="@layout/custom_add_brand" />
+
+        <include layout="@layout/custom_add_category" />
+
+        <include layout="@layout/custom_add_model" />
+
+        <include layout="@layout/custom_add_version" />
+
+        <include layout="@layout/custom_add_module" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
